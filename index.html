@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,34 +8,72 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Evan B Clark</h1>
-    <h2>Portfolio</h2>
-    <ul class="no-bullets">
-        <li><a href="#lanes">Pool Lane Tracking App</a></li>
-        <li><a href="#bart">Live LED BART Map</a></li>
-        <li><a href="#equatos">Online Multiplayer Equatos Game</a></li>
-        <li><a href="#blackjack">Blackjack Game</a></li>
-    </ul>
+    <h1 class="center-text">Evan B Clark</h1>
+    <h2 class="center-text">Portfolio</h2>
+    <!--
+    <div class="center width-max-content">
+        <a href="#lanes">Pool Lane Tracking App</a><br />
+        <a href="#bart">Live LED BART Map</a><br />
+        <a href="#equatos">Online Multiplayer Equatos Game</a><br />
+        <a href="#blackjack">Blackjack Game</a>
+    </div>
+    -->
 
-    <h3 id="lanes">Pool Lane Tracking App</h3>
-    <p>I developed this web app (using HTML, CSS, and JavaScript) and implemented it at multiple YMCA locations where it was used for over a year during the COVID-19 pandemic. The pandemic brought with it new needs and requirements. Each swimmer had to reserve a lane in the swimming pool and this app helped us track which lanes already had swimmers assigned. It was designed to be as simple and user friendly as possible, all in one HTML file.</p>
-    <p><a href="projects/lanes.html" class="btn btn-primary">Open</a></p>
-    <a href="images/lanes.png"><img src="images/lanes.png" alt="a screenshot of the pool lane tracking app" width="600"></a>
+    <div class="container-fluid" style="padding: 0;">
+        <div class="row">
+            <div class="col-xl-6">
+                <h3 id="lanes" class="center-text">Pool Lane Tracking App</h3>
+                <p class="center max-width-600px">I developed this web app (using HTML, CSS, and JavaScript) and implemented it at multiple YMCA locations where it was used for over a year during the COVID-19 pandemic. The pandemic brought with it new needs and requirements. Each swimmer had to reserve a lane in the swimming pool and this app helped us track which lanes already had swimmers assigned. It was designed to be as simple and user friendly as possible, all in one HTML file.</p>
+                <p class="center-text"><a href="projects/lanes.html" class="btn btn-primary">Open</a></p>
+            </div>
+            <div class="col-xl-6 center-text">
+                <img src="images/lanes.png" alt="a screenshot of the pool lane tracking app" width="600">
+            </div>
+        </div>
 
-    <h3 id="bart">Live LED BART Map</h3>
-    <p>Text about map</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/2MIfh4lOa4E?si=f0v9fQp-0O0G-Tsh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-    <h3 id="equatos">Online Multiplayer Equatos Game</h3>
-    <p>Equatos is a fun and educational game I created that uses a standard 52-card deck and math equations to score points. This is a multiplayer game that can be played online with another device or with 2 players on the same device. Just open it in two tabs to test out the public online matches.</p>
-    <p><a href="https://equatos.evanbclark.com" class="btn btn-primary">Open</a></p>
-    <a href="images/equatos.png"><img src="images/equatos.png" alt="a screenshot of the Equatos game" width="600"></a>
+        <div class="row">
+            <div class="col-xl-6">
+                <h3 id="bart" class="center-text">Live LED BART Map</h3>
+                <p class="center max-width-600px">I created a live BART (Bay Area Rapid Transit) map out of LED lights using BART’s API. Each train is represented by a light of that train’s line color. I also added a feature where you can record the data over time and play it back like a timelapse.</p>
+            </div>
+            <div class="col-xl-6 center-text">
+                <iframe width="600" height="338" src="https://www.youtube.com/embed/2MIfh4lOa4E?si=f0v9fQp-0O0G-Tsh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
 
-    <h3 id="blackjack">Blackjack</h3>
-    <p>Text about game</p>
-    <p><a href="https://blackjack.evanbclark.com" class="btn btn-primary">Open</a></p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/_IqsYjzlw80?si=W1DCjhRmUVOrbefF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="row">
+            <div class="col-xl-6">
+                <h3 id="equatos" class="center-text">Online Multiplayer Equatos Game</h3>
+                <p class="center max-width-600px">Equatos is a fun and educational game I created that uses a standard 52-card deck and math equations to score points. This is a multiplayer game that can be played online with another device or with 2 players on the same device. Just open it in two tabs to test out the public online matches.</p>
+                <p class="center-text"><a href="https://equatos.evanbclark.com" class="btn btn-primary">Open</a></p>
+            </div>
+            <div class="col-xl-6 center-text">
+                <a href="images/equatos.png"><img src="images/equatos.png" alt="a screenshot of the Equatos game" width="600"></a>
+            </div>
+        </div>
 
-    <p id="test"></p>
+        <div class="row">
+            <div class="col-xl-6">
+                <h3 id="blackjack" class="center-text">Blackjack</h3>
+                <p class="center max-width-600px">This is a game of blackjack or 21. You play against an AI dealer that behaves just like a real dealer would. You have complete control over 10 different rules like the number of decks, insurance, and surrender, so that you can customize the game exactly to your liking.</p>
+                <p class="center-text"><a href="https://blackjack.evanbclark.com" class="btn btn-primary">Open</a></p>
+            </div>
+            <div class="col-xl-6 center-text">
+                <iframe width="600" height="338" src="https://www.youtube.com/embed/_IqsYjzlw80?si=W1DCjhRmUVOrbefF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <hr class="max-width-1200px center">
+        <div class="max-width-1200px center" style="padding-left: 10px; padding-right: 10px; padding-bottom: 15px; display: flex; justify-content: space-between; align-items: center;">
+            <div>© 2026 Evan B Clark</div>
+            <div>
+                <a href="https://github.com/EvanBClark" target="_blank"><img src="images/github-mark-white.png" alt="github logo" width="40px"></a>
+                <a href="mailto:evan@evanbclark.com"><img src="images/email.png" alt="email logo" width="40px"></a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

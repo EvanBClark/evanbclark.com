@@ -1,5 +1,30 @@
-ul.no-bullets {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+}
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.center-text { 
+  text-align: center;
+}
+
+.max-width-600px {
+  max-width: 600px;
+}
+
+.max-width-1200px {
+  max-width: 1200px;
+}
+
+.width-max-content {
+  width: max-content;
+}
+
+.row {
+  padding-top: 30px;
 }
